@@ -30,8 +30,9 @@ func main() {
 		Task:      t,
 	}
 
-	fmt.Printf("task: %v\n", t)
-	fmt.Printf("task event: %v\n", te)
+	fmt.Printf("\n")
+	fmt.Printf("task: %v\n\n", t)
+	fmt.Printf("task event: %v\n\n", te)
 
 	w := worker.Worker{
 		Name:  "worker-1",
@@ -39,7 +40,7 @@ func main() {
 		Db:    make(map[uuid.UUID]*task.Task),
 	}
 
-	fmt.Printf("worker: %v\n", w)
+	fmt.Printf("worker: %v\n\n", w)
 	w.CollectStats()
 	w.RunTask()
 	w.StartTask()
@@ -51,7 +52,8 @@ func main() {
 		Workers: []string{w.Name},
 	}
 
-	fmt.Printf("manager: %v\n", m)
+	fmt.Printf("\n")
+	fmt.Printf("manager: %v\n\n", m)
 	m.SelectWorker()
 	m.UpdateTasks()
 	m.SendWork()
@@ -63,5 +65,6 @@ func main() {
 		Disk:   25,
 		Role:   "worker",
 	}
-	fmt.Printf("node: %v\n", n)
+	fmt.Printf("\n")
+	fmt.Printf("node: %v\n\n", n)
 }
