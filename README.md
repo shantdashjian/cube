@@ -1,6 +1,6 @@
 # Cube
 
-A minimal container orchestrator written in Go. I wrote this tool from scratch reproducing the code accompanying the book [Build an Orchestrator in Go from Scratch](https://www.manning.com/books/build-an-orchestrator-in-go-from-scratch) by Tim Boring. It's an excellent book by Manning and I highly recommend it.
+A minimal container orchestrator written in Go. I followed along reading the book [Build an Orchestrator in Go from Scratch](https://www.manning.com/books/build-an-orchestrator-in-go-from-scratch) by Tim Boring. It's an excellent book by Manning and I highly recommend it.
 
 ![System Design](demo/system-design.png)
 
