@@ -3,6 +3,7 @@ package task
 import (
 	"github.com/google/uuid"
 	"github.com/docker/go-connections/nat"
+	"time"
 )
 
 
@@ -16,7 +17,7 @@ const (
 	Failed
 )
 
-type Task struct (
+type Task struct {
 	ID				uuid.UUID
 	Name			string
 	State			State
@@ -28,11 +29,11 @@ type Task struct (
 	RestartPolicy	string	
 	StartTime		time.Time
 	FinishTime		time.Time
-)
+}
 
-type Task struct (
+type TaskEvent struct {
 	ID			uuid.UUID
 	State		State
 	Timestamp	time.Time
 	Task		Task
-)
+}
