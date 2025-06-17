@@ -16,5 +16,5 @@ A minimal container orchestrator written in Go. I followed along reading the boo
 
 ## Tools 
 1. Programming Language: [Go](https://go.dev/)
-2. Development Environment: [Linux - CentOS Stream 9](https://www.centos.org/download/)
+2. Development Environment: [Linux: Alpine](https://www.alpinelinux.org/)
 

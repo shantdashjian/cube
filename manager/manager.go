@@ -14,7 +14,7 @@ type Manager struct {
 	EventDb 		map[string][]*task.TaskEvent
 	Workers			[]string
 	WorkerTaskMap	map[string][]uuid.UUID
-	TasWorkerkMap	map[uuid.UUID]string
+	TaskWorkerkMap	map[uuid.UUID]string
 }
 
 func (m *Manager) SelectWorker() {
